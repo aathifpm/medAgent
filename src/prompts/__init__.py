@@ -1,0 +1,1 @@
+"""MedCollab — Prompt Templates Package"""

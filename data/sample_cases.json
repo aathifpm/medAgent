@@ -1,0 +1,465 @@
+[
+    {
+        "patient_id": "CASE001",
+        "age": 58,
+        "sex": "M",
+        "chief_complaint": "Crushing chest pain radiating to left arm for the past 2 hours",
+        "symptoms": [
+            {
+                "name": "chest pain",
+                "severity": "severe",
+                "duration": "2 hours",
+                "location": "substernal",
+                "characteristics": [
+                    "crushing",
+                    "radiating to left arm",
+                    "worsens with exertion"
+                ]
+            },
+            {
+                "name": "shortness of breath",
+                "severity": "moderate",
+                "duration": "2 hours",
+                "characteristics": [
+                    "worsens with exertion"
+                ]
+            },
+            {
+                "name": "diaphoresis",
+                "severity": "moderate",
+                "duration": "2 hours",
+                "characteristics": [
+                    "profuse sweating"
+                ]
+            },
+            {
+                "name": "nausea",
+                "severity": "mild",
+                "duration": "1 hour",
+                "characteristics": []
+            }
+        ],
+        "lab_results": [
+            {
+                "test_name": "Troponin-I",
+                "value": 2.5,
+                "unit": "ng/mL",
+                "reference_range": "0.0-0.04 ng/mL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "BNP",
+                "value": 450,
+                "unit": "pg/mL",
+                "reference_range": "0-100 pg/mL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Creatinine",
+                "value": 1.2,
+                "unit": "mg/dL",
+                "reference_range": "0.7-1.3 mg/dL",
+                "is_abnormal": false
+            }
+        ],
+        "medical_history": [
+            "Hypertension",
+            "Hyperlipidemia",
+            "Type 2 Diabetes"
+        ],
+        "current_medications": [
+            "Metformin 1000mg",
+            "Lisinopril 20mg",
+            "Atorvastatin 40mg"
+        ],
+        "family_history": [
+            "Father died of MI at age 55"
+        ],
+        "social_history": "Former smoker (quit 5 years ago), occasional alcohol use",
+        "ground_truth": "ST-Elevation Myocardial Infarction (STEMI)"
+    },
+    {
+        "patient_id": "CASE002",
+        "age": 32,
+        "sex": "F",
+        "chief_complaint": "Severe headache with visual disturbances and neck stiffness for 3 days",
+        "symptoms": [
+            {
+                "name": "headache",
+                "severity": "severe",
+                "duration": "3 days",
+                "location": "bilateral, frontal and occipital",
+                "characteristics": [
+                    "throbbing",
+                    "photophobia",
+                    "worsens with movement"
+                ]
+            },
+            {
+                "name": "visual disturbances",
+                "severity": "moderate",
+                "duration": "2 days",
+                "characteristics": [
+                    "blurred vision",
+                    "photophobia",
+                    "scotoma"
+                ]
+            },
+            {
+                "name": "neck stiffness",
+                "severity": "moderate",
+                "duration": "2 days",
+                "characteristics": [
+                    "limited range of motion"
+                ]
+            },
+            {
+                "name": "fever",
+                "severity": "moderate",
+                "duration": "3 days",
+                "characteristics": [
+                    "38.5°C"
+                ]
+            },
+            {
+                "name": "nausea",
+                "severity": "moderate",
+                "duration": "2 days",
+                "characteristics": [
+                    "intermittent vomiting"
+                ]
+            }
+        ],
+        "lab_results": [
+            {
+                "test_name": "WBC",
+                "value": 15.2,
+                "unit": "x10^9/L",
+                "reference_range": "4.5-11.0 x10^9/L",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "CRP",
+                "value": 85,
+                "unit": "mg/L",
+                "reference_range": "0-10 mg/L",
+                "is_abnormal": true
+            }
+        ],
+        "medical_history": [
+            "Migraine with aura"
+        ],
+        "current_medications": [
+            "Sumatriptan PRN"
+        ],
+        "family_history": [],
+        "social_history": "Non-smoker, social drinker, works as a teacher",
+        "ground_truth": "Bacterial Meningitis"
+    },
+    {
+        "patient_id": "CASE003",
+        "age": 67,
+        "sex": "F",
+        "chief_complaint": "Progressive fatigue, weight loss, and increased thirst over the past month",
+        "symptoms": [
+            {
+                "name": "fatigue",
+                "severity": "severe",
+                "duration": "1 month",
+                "characteristics": [
+                    "progressive",
+                    "limits daily activities"
+                ]
+            },
+            {
+                "name": "unintentional weight loss",
+                "severity": "moderate",
+                "duration": "1 month",
+                "characteristics": [
+                    "approximately 5kg loss"
+                ]
+            },
+            {
+                "name": "polydipsia",
+                "severity": "moderate",
+                "duration": "3 weeks",
+                "characteristics": [
+                    "excessive thirst",
+                    "drinking 4-5L/day"
+                ]
+            },
+            {
+                "name": "polyuria",
+                "severity": "moderate",
+                "duration": "3 weeks",
+                "characteristics": [
+                    "frequent urination",
+                    "nocturia x3"
+                ]
+            },
+            {
+                "name": "peripheral edema",
+                "severity": "mild",
+                "duration": "2 weeks",
+                "location": "bilateral lower extremities",
+                "characteristics": [
+                    "pitting edema"
+                ]
+            },
+            {
+                "name": "blurred vision",
+                "severity": "mild",
+                "duration": "2 weeks",
+                "characteristics": [
+                    "intermittent"
+                ]
+            }
+        ],
+        "lab_results": [
+            {
+                "test_name": "Fasting Glucose",
+                "value": 320,
+                "unit": "mg/dL",
+                "reference_range": "70-100 mg/dL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "HbA1c",
+                "value": 11.2,
+                "unit": "%",
+                "reference_range": "4.0-5.6%",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Creatinine",
+                "value": 2.1,
+                "unit": "mg/dL",
+                "reference_range": "0.6-1.1 mg/dL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "BUN",
+                "value": 35,
+                "unit": "mg/dL",
+                "reference_range": "7-20 mg/dL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Potassium",
+                "value": 5.8,
+                "unit": "mEq/L",
+                "reference_range": "3.5-5.0 mEq/L",
+                "is_abnormal": true
+            }
+        ],
+        "medical_history": [
+            "Type 2 Diabetes (poorly controlled)",
+            "Hypertension",
+            "Chronic Kidney Disease Stage 3"
+        ],
+        "current_medications": [
+            "Metformin 1000mg",
+            "Glipizide 10mg",
+            "Amlodipine 10mg"
+        ],
+        "family_history": [
+            "Mother had diabetes",
+            "Brother had kidney failure"
+        ],
+        "social_history": "Non-smoker, sedentary lifestyle, retired nurse",
+        "ground_truth": "Diabetic Ketoacidosis with Acute Kidney Injury"
+    },
+    {
+        "patient_id": "CASE004",
+        "age": 45,
+        "sex": "M",
+        "chief_complaint": "Persistent cough with blood-streaked sputum and unintentional weight loss",
+        "symptoms": [
+            {
+                "name": "chronic cough",
+                "severity": "moderate",
+                "duration": "6 weeks",
+                "characteristics": [
+                    "productive",
+                    "blood-streaked sputum"
+                ]
+            },
+            {
+                "name": "hemoptysis",
+                "severity": "mild",
+                "duration": "2 weeks",
+                "characteristics": [
+                    "streaks of blood in sputum"
+                ]
+            },
+            {
+                "name": "weight loss",
+                "severity": "moderate",
+                "duration": "2 months",
+                "characteristics": [
+                    "unintentional",
+                    "approximately 8kg"
+                ]
+            },
+            {
+                "name": "night sweats",
+                "severity": "moderate",
+                "duration": "3 weeks",
+                "characteristics": [
+                    "drenching"
+                ]
+            },
+            {
+                "name": "low-grade fever",
+                "severity": "mild",
+                "duration": "2 weeks",
+                "characteristics": [
+                    "37.8°C, intermittent"
+                ]
+            },
+            {
+                "name": "chest pain",
+                "severity": "mild",
+                "duration": "1 week",
+                "location": "right side",
+                "characteristics": [
+                    "pleuritic"
+                ]
+            }
+        ],
+        "lab_results": [
+            {
+                "test_name": "WBC",
+                "value": 12.5,
+                "unit": "x10^9/L",
+                "reference_range": "4.5-11.0 x10^9/L",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "ESR",
+                "value": 55,
+                "unit": "mm/hr",
+                "reference_range": "0-22 mm/hr",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Hemoglobin",
+                "value": 10.5,
+                "unit": "g/dL",
+                "reference_range": "13.5-17.5 g/dL",
+                "is_abnormal": true
+            }
+        ],
+        "medical_history": [],
+        "current_medications": [],
+        "family_history": [],
+        "social_history": "Smoker (30 pack-years), construction worker, recent travel to Southeast Asia",
+        "ground_truth": "Pulmonary Tuberculosis"
+    },
+    {
+        "patient_id": "CASE005",
+        "age": 28,
+        "sex": "F",
+        "chief_complaint": "Joint pain, skin rash, and persistent fatigue for 2 months",
+        "symptoms": [
+            {
+                "name": "joint pain",
+                "severity": "moderate",
+                "duration": "2 months",
+                "location": "bilateral hands, wrists, knees",
+                "characteristics": [
+                    "symmetrical",
+                    "morning stiffness >1 hour",
+                    "swelling"
+                ]
+            },
+            {
+                "name": "butterfly rash",
+                "severity": "moderate",
+                "duration": "3 weeks",
+                "location": "malar region (face)",
+                "characteristics": [
+                    "erythematous",
+                    "photosensitive",
+                    "bilateral"
+                ]
+            },
+            {
+                "name": "fatigue",
+                "severity": "severe",
+                "duration": "2 months",
+                "characteristics": [
+                    "debilitating",
+                    "limits work"
+                ]
+            },
+            {
+                "name": "oral ulcers",
+                "severity": "mild",
+                "duration": "1 month",
+                "location": "oral mucosa",
+                "characteristics": [
+                    "painless",
+                    "recurrent"
+                ]
+            },
+            {
+                "name": "hair loss",
+                "severity": "mild",
+                "duration": "6 weeks",
+                "characteristics": [
+                    "diffuse thinning"
+                ]
+            }
+        ],
+        "lab_results": [
+            {
+                "test_name": "ANA",
+                "value": 1,
+                "unit": "titer 1:640",
+                "reference_range": "Negative",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Anti-dsDNA",
+                "value": 120,
+                "unit": "IU/mL",
+                "reference_range": "0-30 IU/mL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "C3 Complement",
+                "value": 45,
+                "unit": "mg/dL",
+                "reference_range": "90-180 mg/dL",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "ESR",
+                "value": 65,
+                "unit": "mm/hr",
+                "reference_range": "0-20 mm/hr",
+                "is_abnormal": true
+            },
+            {
+                "test_name": "Hemoglobin",
+                "value": 10.2,
+                "unit": "g/dL",
+                "reference_range": "12.0-15.5 g/dL",
+                "is_abnormal": true
+            }
+        ],
+        "medical_history": [
+            "Raynaud's phenomenon"
+        ],
+        "current_medications": [
+            "NSAIDs PRN"
+        ],
+        "family_history": [
+            "Mother has rheumatoid arthritis",
+            "Aunt has Sjögren's syndrome"
+        ],
+        "social_history": "Non-smoker, non-drinker, software engineer",
+        "ground_truth": "Systemic Lupus Erythematosus (SLE)"
+    }
+]
