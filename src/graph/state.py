@@ -43,5 +43,8 @@ class AgentState(TypedDict, total=False):
     is_consensus_reached: bool          # Whether threshold was met
     previous_consensus_attempts: list[dict]  # History of consensus rounds
 
+    # ── Patient interaction loop guard ───────────────────────
+    patient_interaction_round: int       # Patient interaction loop iteration (1-indexed)
+
     # ── Trace ────────────────────────────────────────────────
     messages: list[dict]                # Full conversation trace for debugging

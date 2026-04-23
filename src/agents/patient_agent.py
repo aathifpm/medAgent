@@ -180,17 +180,21 @@ def patient_interaction_agent(state: dict[str, Any]) -> dict[str, Any]:
     else:
         logger.info("🤔 Patient Agent: No significant evidence gaps found.")
 
+    patient_interaction_round = state.get("patient_interaction_round", 1)
+
     state_update = {
         "patient_case": patient_case,
         "follow_up_questions": follow_up_questions,
         "follow_up_answers": follow_up_answers,
         "has_new_evidence": len(new_evidence_items) > 0,
+        "patient_interaction_round": patient_interaction_round + 1,
         "messages": state.get("messages", []) + [
             {"role": "patient_agent", "content": json.dumps({
                 "has_gaps": has_gaps,
                 "questions_asked": len(questions),
                 "new_evidence_found": len(new_evidence_items),
                 "evidence_items": new_evidence_items,
+                "patient_interaction_round": patient_interaction_round,
             }, indent=2)}
         ],
     }

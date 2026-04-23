@@ -40,9 +40,9 @@ def should_loop_patient(state: AgentState) -> Literal["specialists", "consensus"
     - If no gaps → proceed to consensus
     """
     has_new_evidence = state.get("has_new_evidence", False)
-    current_round = state.get("current_round", 1)
+    patient_interaction_round = state.get("patient_interaction_round", 1)
 
-    if has_new_evidence and current_round <= 2:
+    if has_new_evidence and patient_interaction_round <= 1:
         # Only loop back once to avoid infinite evidence gathering
         logger.info("↩️ New evidence found — looping back to specialists")
         return "specialists"
@@ -152,6 +152,7 @@ def run_diagnosis(
         "follow_up_questions": [],
         "follow_up_answers": [],
         "has_new_evidence": False,
+        "patient_interaction_round": 1,
         "consensus_result": {},
         "current_round": 1,
         "max_rounds": max_rounds,
